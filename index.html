@@ -40,6 +40,7 @@
                 <ul class="nav-menu">
                     <li><a href="index.html">HOME</a></li>
                     <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="practice.html">OUR PRACTICE</a></li>
                     <li><a href="contact.html">CONTACT</a></li>
                 </ul>
             </nav>
@@ -103,7 +104,74 @@
 
 
 
-        <section class="parallax"></section>
+        <section class="parallax parallax1"></section>
+
+
+
+
+        <section class="programs">
+            <div class="programs-container">
+                <div class="slider">
+                    <div class="programs-track" id="programsTrack">
+        
+                        <article class="program-card">
+                            <img src="https://www.eyeclinic-mmc.com/en/wp-content/uploads/2023/02/pr1-nyst.png" alt="Program 1">
+                            <h3>Program 1</h3>
+                            <p>Treatment of nystagmus with transplantation of one’s own stem cells</p>
+                            <a href="#" class="program-btn">Read More →</a>
+                        </article>
+        
+                        <article class="program-card">
+                            <img src="https://www.eyeclinic-mmc.com/en/wp-content/uploads/2023/02/pr2-ambl.png" alt="Program 2">
+                            <h3>Program 2</h3>
+                            <p>Treatment of amblyopia with transplantation of one’s own stem cells</p>
+                            <a href="#" class="program-btn">Read More →</a>
+                        </article>
+        
+                        <article class="program-card">
+                            <img src="https://www.eyeclinic-mmc.com/en/wp-content/uploads/2023/02/pr3-atr.png" alt="Program 3">
+                            <h3>Program 3</h3>
+                            <p>Treatment of optic nerve atrophy with transplantation of one’s own stem cells</p>
+                            <a href="#" class="program-btn">Read More →</a>
+                        </article>
+        
+                        <article class="program-card">
+                            <img src="https://www.eyeclinic-mmc.com/en/wp-content/uploads/2023/02/pr4-dystr.png" alt="Program 4">
+                            <h3>Program 4</h3>
+                            <p>Treatment of retinal disorders with transplantation of one’s own stem cells</p>
+                            <a href="#" class="program-btn">Read More →</a>
+                        </article>
+        
+                
+                        <article class="program-card">
+                            <img src="https://www.eyeclinic-mmc.com/en/wp-content/uploads/2023/02/pr1-nyst.png" alt="Program 1">
+                            <h3>Program 1</h3>
+                            <p>Treatment of nystagmus with transplantation of one’s own stem cells</p>
+                            <a href="#" class="program-btn">Read More →</a>
+                        </article>
+        
+                        <article class="program-card">
+                            <img src="https://www.eyeclinic-mmc.com/en/wp-content/uploads/2023/02/pr2-ambl.png" alt="Program 2">
+                            <h3>Program 2</h3>
+                            <p>Treatment of amblyopia with transplantation of one’s own stem cells</p>
+                            <a href="#" class="program-btn">Read More →</a>
+                        </article>
+        
+                        <article class="program-card">
+                            <img src="https://www.eyeclinic-mmc.com/en/wp-content/uploads/2023/02/pr3-atr.png" alt="Program 3">
+                            <h3>Program 3</h3>
+                            <p>Treatment of optic nerve atrophy with transplantation of one’s own stem cells</p>
+                            <a href="#" class="program-btn">Read More →</a>
+                        </article>
+        
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="parallax parallax2"></section>
 
 
 
@@ -196,5 +264,28 @@
         document.getElementById("menu").classList.toggle("active");
     }
     </script>
+
+    <script>
+    const track = document.getElementById("programsTrack");
+    const cards = document.querySelectorAll(".program-card");
+    
+    let index = 0;
+    
+    function autoSlide() {
+        const cardWidth = cards[0].offsetWidth + 40; // 40 = gap
+        index++;
+    
+        if (index > cards.length - 3) {
+            index = 0;
+        }
+    
+        track.style.transform = `translateX(-${index * cardWidth}px)`;
+    }
+    
+    setInterval(autoSlide, 3000);
+    </script>
+
+
+
 </body>
 </html>

@@ -380,18 +380,99 @@ button {
 
 .parallax{
     height: 60vh;
-    background-image: url(https://t4.ftcdn.net/jpg/03/05/09/59/360_F_305095987_GdzExAR8x0LCCNBdanfBIw8HkJiJZzDg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
 }
 
+.parallax1{
+    background-image: url(https://t4.ftcdn.net/jpg/03/05/09/59/360_F_305095987_GdzExAR8x0LCCNBdanfBIw8HkJiJZzDg.jpg);
+}
+
+.parallax2{
+    background-image: url(https://images3.alphacoders.com/946/thumb-1920-946054.jpg);
+}
+
 @media(max-width: 768px){
     .parallax{
-        background-attachment: scroll;
+        background-attachment: fixed;
+        background-position: center top;
         height: 40vh;
     }
+}
+
+
+
+
+/*programs-section ===============================*/
+
+.programs{
+    background: #e5edf1;
+    padding: 80px 0;
+}
+
+.programs-container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.slider{
+    max-width: 1040px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.programs-track{
+    display: flex;
+    gap: 40px;
+    transition: transform 0.6s ease;
+    will-change: transform;
+}
+
+.program-card{
+    flex: 0 0 320px;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    color: #555;
+}
+
+.program-card img{
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 20px;
+}
+
+.program-card h3{
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #444;
+}
+
+.program-card p{
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.program-btn{
+    display: inline-block;
+    padding: 14px 30px;
+    border: 2px solid #29a3df;
+    border-radius: 40px;
+    color: #29a3df;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.2s ease;
+}
+
+.program-btn:hover{
+    background: #29a3df;
+    color: white;
 }
 
 
