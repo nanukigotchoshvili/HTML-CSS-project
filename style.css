@@ -376,6 +376,25 @@ button {
 }
 
 
+/*parallax-section ==================================*/
+
+.parallax{
+    height: 60vh;
+    background-image: url(https://t4.ftcdn.net/jpg/03/05/09/59/360_F_305095987_GdzExAR8x0LCCNBdanfBIw8HkJiJZzDg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+@media(max-width: 768px){
+    .parallax{
+        background-attachment: scroll;
+        height: 40vh;
+    }
+}
+
+
 
 
 
